@@ -96,3 +96,93 @@ body{
     padding: 10px 20px;
     border: none;
 }
+.how-it-works{
+    display: flex;
+    height: 700px;
+    background-color: white;
+    background-size: cover;
+    padding: 40px 250px;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+
+}
+.how-it-works__title{
+    font-family: Montserrat bold;
+    font-size: 22pt;
+    margin-top: 20px;
+}
+.how-it-works__steps{
+    display:flex;
+    flex-direction: row;
+}
+.how-it-works__step-1{
+    background-color: black;
+    background-image: url(../src/images/image-step-1.png);
+    color: white;
+    height: 400px;
+    width: 300px;
+    margin: 10px;
+    padding-left: 10px;
+    background-size: cover;
+}
+.how-it-works__step-2{
+    background-color: black;
+    background-image: url(../src/images/image-step-2.png);
+    color: white;
+    height: 400px;
+    width: 300px;
+    margin: 10px;
+    padding-left: 10px;
+    background-size: cover;
+}
+.how-it-works__step-3{
+    background-color: black;
+    background-image: url(../src/images/image-step-3.png);
+    color: white;
+    height: 400px;
+    width: 300px;
+    margin: 10px;
+    padding-left: 10px;
+    background-size: cover;
+}
+.how-it-works__step-number{
+    padding-left: 15px;
+    text-transform:uppercase;
+    margin-top: 250px;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-size: 10pt;
+    border: 2px solid white;
+    border-radius: 50px;
+    background: #ff4e50;
+    height: 20px;
+    width: 60px;
+    margin-bottom: 5px;
+}
+.how-it-works__step-number-2{
+    padding-left: 15px;
+    text-transform:uppercase;
+    margin-top: 270px;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-size: 10pt;
+    border: 2px solid white;
+    border-radius: 50px;
+    background: #ff4e50;
+    height: 20px;
+    width: 60px;
+    margin-bottom: 5px;
+}
+
+.how-it-works__step-title{
+    font-family: Montserrat bold;
+    font-size: 20pt;
+    text-transform:uppercase;
+    margin: 0 0;
+}
+.how-it-works__step-subtitle{
+    font-size: 10pt;
+}
