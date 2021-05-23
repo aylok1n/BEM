@@ -120,7 +120,6 @@ body{
     align-items: center;
     flex-direction: column;
     margin-top: 50px;
-
 }
 .how-it-works__title{
     font-family: Montserrat bold;
@@ -195,9 +194,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
-.partners__tittle{
+.partners__title{
     font-family: Montserrat bold;
     font-size: 22px;
     margin: 20px;
@@ -293,4 +292,156 @@ body{
     color: #ff4e50;
     border: none;
     padding: 10px 20px;
+}
+.ideas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.ideas__title{
+    font-family: Montserrat bold;
+    font-size: 22px;
+    margin: 20px;
+}
+.ideas__items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+}
+.ideas__items-row{
+    display: flex;
+    flex-direction: row;
+    width: 940px;
+}
+.ideas__items-row-item-square-sport{
+    background: url(../src/images/ideas-sport.png);
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+.ideas__items-row-item-square-wellnes{
+    background: url(../src/images/ideas-wellnes.png);
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+.ideas__items-row-item-square-extreme{
+    background: url(../src/images/ideas-extreme.png);
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+.ideas__items-row-item-square-games{
+    background: url(../src/images/ideas-games.png);
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+.ideas__items-row-item-square-travelling{
+    background: url(../src/images/ideas-travelling.png);
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+.ideas__items-row-item-wide-culture{
+    background: url(../src/images/ideas-culture.png);
+    width: 620px;
+    height: 300px;
+    margin: 10px;
+}
+.ideas__items-row-item-wide-relaxation{
+    background: url(../src/images/ideas-relaxation.png);
+    width: 620px;
+    height: 300px;
+    margin: 10px;
+}
+.ideas__items-row-item-text{
+    height: 100%;
+    display:flex;
+    font-family: Montserrat bold;
+    font-size: 22px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.search-partners{
+    display: flex;
+    background-color: white;
+    background-size: cover;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+}
+.search-partners__title{
+    font-family: Montserrat bold;
+    font-size: 22px;
+}
+.search-partners__subtitle{
+    font-family: Roboto;
+    font-size: 18px;
+    margin: 20px;
+}
+.search-partners__form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-partners__form input{
+   padding: 10px 70px 10px 10px;
+   font-family: Roboto;
+   font-size: 14px;
+   margin-right: 10px;
+}
+.search-partners__form button{
+    font-family: Montserrat bold;
+    font-size: 14px;
+    background-color: #ff4e50;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+
+.footer{
+    display: flex;
+    background-color: white;
+    background-size: cover;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+    border-top: 4px solid #ff4e50;
+    padding: 40px 0px;
+}
+.footer-container{
+    display: flex;
+    width: 560px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer__company-name{
+    font-family: Montserrat bold;
+    color: #ff4e50;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.footer__list-name{
+    font-family: Montserrat bold;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.footer__list-item{
+    font-family: Roboto;
+    font-size: 14px;
+    color: #cccccc;
+}
+.footer__logo-designed-by{
+    font-family: Montserrat bold;
+    font-size: 10px;
+    color: #cccccc;
+    text-align: right;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
