@@ -20,98 +20,95 @@ body{
     display: flex;
     flex-wrap: wrap;
     height: 700px;
-    background: url(../src/images/promo-image.png) center no-repeat;
+    background: url(../src/images/promo-image.png) center;
     background-color: black;
     background-size: cover;
     justify-content: center;
 }
 .promo__header{
-    display: flex;
+    display: flex;  
     width: 100%;
     height: 40px;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 25px 0px 0px 0px;
+}
+.promo__header-container{
+    display: flex;
+    width: 940px;
+    justify-content: space-between;
     flex-direction: row-reverse; 
     flex-wrap: wrap;
+    
 }
 .promo__header-name{
     font-family: 'Montserrat bold';
+    font-weight: 500;
     font-size: medium;
     text-transform: uppercase;
     color: white;
     font-size: 20px;
+    letter-spacing: 1px;
 }
 .promo__buttons{
     display: flex;
     flex-direction: row;
     white-space: nowrap;
     align-items: center;
+    justify-content: space-around;
+    padding-bottom: 2px;
 }
 .promo__button button{
+    display: flex;
     font-family: Montserrat bold;
     background:none;
     color: white;
     border: none;
     font-size: 14px;
 }
-.promo__button_border button{
+.promo__button-border button{
     font-family: Montserrat bold;
     background:none;
     color: white;
     border: none;
     font-size: 14px;
-    padding: 10px 20px;
+    
 }
-
-.promo__button_border{
+.promo__button-border{
     border: 2px solid white;
     border-radius: 50px;
-    margin-left: 10px;
+    margin-left: 13px;
+    padding: 7px 10px 7px 10px
 }
+
 .promo__content{
     display:flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    padding-bottom: 90px;
 }
 .promo__title{
-    display:flex;
-    height: 160px;
     font-family: Montserrat bold;
     color: white;
     font-size: 52px;
     text-transform: uppercase;
+    text-align: center;
 }
 .promo__subtitle{
     font-size: 24px;
     color: white;
+    text-align: center;
+    margin: 32px;
 }
-.promo_content-button button{
+.promo__content-button button{
     font-family: Montserrat bold;
     background:none;
     color: white;
     background: #ff4e50;
     font-size: 14px;
     border-radius: 50px;
-    padding: 10px 20px;
+    padding: 12px 22px;
     border: none;
 }
-@media screen and (max-width: 320px) {
-    .promo__header{
-    align-items: center;
-    padding-top: 130px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin: 0px;
-    }
-    .promo__header-name{
-        padding-top: 140px;
-    }
-    .promo__title{
-        font-size: 30px;
-    }
-}
-
 
 .how-it-works{
     display: flex;
@@ -124,7 +121,7 @@ body{
 .how-it-works__title{
     font-family: Montserrat bold;
     font-size: 22px;
-    margin: 20px;
+    margin: 20px 0px 15px 0px;
 }
 .how-it-works__steps{
     display:flex;
@@ -132,7 +129,7 @@ body{
     justify-content: space-between;
     flex-direction: row;
 }
-.how-it-works__step-1{
+.how-it-works__card-step-1{
     background: url(../src/images/image-step-1.png);
     display: flex;
     flex-direction: column;
@@ -143,8 +140,9 @@ body{
     background-size: cover;
     padding-left: 20px;
 }
-.how-it-works__step-2{
-    background: url(../src/images/image-step-2.png);
+.how-it-works__card-step-2{
+
+    background: url(../src/images/image-step-2.png) ;
     display: flex;
     flex-direction: column;
     justify-content:flex-end;
@@ -154,8 +152,8 @@ body{
     background-size: cover;
     padding-left: 20px;
 }
-.how-it-works__step-3{
-    background: url(../src/images/image-step-3.png);
+.how-it-works__card-step-3{
+    background: url(../src/images/image-step-3.png) ;
     display: flex;
     flex-direction: column;
     justify-content:flex-end;
@@ -165,7 +163,10 @@ body{
     background-size: cover;
     padding-left: 20px;
 }
-.how-it-works__step-number{
+.how-it-works__card-step-number{
+    padding-left: 2px;
+    font-family: Montserrat;
+    letter-spacing: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,50 +178,53 @@ body{
     height: 20px;
     width: 70px;
 }
-
-.how-it-works__step-title{
+.how-it-works__card-step-title{
     font-family: Montserrat bold;
-    font-size: 22px;
-    text-transform:uppercase;
+    font-size: 24px;
+    margin: 14px 0px 8px 0px;
 }
-.how-it-works__step-subtitle{
+.how-it-works__card-step-subtitle{
     font-size: 14px;
-    padding-bottom: 10px;
-    color: #cccccc;
+    margin-top: 5px;
+    padding-bottom: 15px;
+    /* color: #cccccc; */
 }
 
 .partners{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin-top: 50px;
 }
 .partners__title{
     font-family: Montserrat bold;
     font-size: 22px;
-    margin: 20px;
+    margin: 21px 0px 13px 0px;
 }
 .partners__items{
     display:flex;
     width: 940px;
+    flex-direction: row;
     justify-content: space-between;
+}
+.partners__items-row{
+    display:flex;
+    width: 466px;
     flex-direction: row;
 }
-.partners__item{
+.partners__item-card{
     display: flex;
     align-items: center;
-
     flex-direction: column;
-    height: 235px;
-    width: 235px;
+    height: 233px;
+    width: 233px;
 }
-.partners__item-avatar{
+.partners__item-card-avatar{
     display: flex;
     width: 120px;
     height: 120px;
 }
-.partners__item-icon-1{
+.partners__item-card-icon-1{
     position: absolute;
     display: flex;
     background-color: #ff4e50;
@@ -230,9 +234,9 @@ body{
     width: 33px;
     align-items: center;
     justify-content: center;
-    transform: translate(230%, 230%);
+    transform: translate(220%, 220%);
 }
-.partners__item-icon-2{
+.partners__item-card-icon-2{
     position: absolute;
     display: flex;
     background-color: #1cd7ad;
@@ -242,9 +246,9 @@ body{
     width: 33px;
     align-items: center;
     justify-content: center;
-    transform: translate(230%, 230%);
+    transform: translate(220%, 220%);
 }
-.partners__item-icon-3{
+.partners__item-card-icon-3{
     position: absolute;
     display: flex;
     background-color: #ffa507;
@@ -254,9 +258,9 @@ body{
     width: 33px;
     align-items: center;
     justify-content: center;
-    transform: translate(230%, 230%);
+    transform: translate(220%, 220%);
 }
-.partners__item-icon-4{
+.partners__item-card-icon-4{
     position: absolute;
     display: flex;
     background-color: #4e73db;
@@ -266,14 +270,15 @@ body{
     width: 33px;
     align-items: center;
     justify-content: center;
-    transform: translate(230%, 230%);
+    transform: translate(220%, 220%);
 }
-.partners__item-name{
+.partners__item-card-name{
     font-family: Montserrat bold;
     font-size: 14px;
-    margin: 10px;
+    padding-top: 5px;
+    /* margin: 2px; */
 }
-.partner__item-biography{
+.partner__item-card-biography{
     font-family: Roboto;
     font-size: 14px;
     color: #666666;
@@ -281,9 +286,9 @@ body{
 }
 .partners__button{
     display: flex;
-    border: 3px solid #ff4e50;
+    border: 2px solid #ff4e50;
     border-radius: 50px;
-    margin-top: 70px;
+    margin-top: 40px;
 }
 .partners__button button{
     background: none;
@@ -291,8 +296,9 @@ body{
     font-size: 14px;
     color: #ff4e50;
     border: none;
-    padding: 10px 20px;
+    padding: 9px 28px;
 }
+
 .ideas{
     display: flex;
     flex-direction: column;
@@ -302,60 +308,75 @@ body{
 .ideas__title{
     font-family: Montserrat bold;
     font-size: 22px;
-    margin: 20px;
+    margin-top: 24px;
 }
 .ideas__items{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 10px;
+    /* margin: 10px; */
 }
 .ideas__items-row{
     display: flex;
     flex-direction: row;
     width: 940px;
+    justify-content: space-between;
 }
 .ideas__items-row-item-square-sport{
-    background: url(../src/images/ideas-sport.png);
+    background: url(../src/images/ideas-sport.png) center no-repeat;
     width: 300px;
-    height: 300px;
-    margin: 10px;
+    height: 310px;
+    margin-top: 2px;
+    padding: 10px 0px;
+
 }
 .ideas__items-row-item-square-wellnes{
-    background: url(../src/images/ideas-wellnes.png);
+    background: url(../src/images/ideas-wellnes.png) center no-repeat;
     width: 300px;
-    height: 300px;
-    margin: 10px;
+    height: 310px;
+    margin-top: 2px;
+
+    padding: 10px 0px;
 }
 .ideas__items-row-item-square-extreme{
-    background: url(../src/images/ideas-extreme.png);
+    background: url(../src/images/ideas-extreme.png) center no-repeat;
     width: 300px;
-    height: 300px;
-    margin: 10px;
+    height: 310px;
+    margin-top: 2px;
+    padding: 10px 0px;
+
 }
 .ideas__items-row-item-square-games{
-    background: url(../src/images/ideas-games.png);
+    background: url(../src/images/ideas-games.png) center no-repeat;
     width: 300px;
-    height: 300px;
-    margin: 10px;
+    height: 310px;
+    margin-top: 2px;
+    padding: 10px 0px;
+
 }
 .ideas__items-row-item-square-travelling{
-    background: url(../src/images/ideas-travelling.png);
+    background: url(../src/images/ideas-travelling.png) center no-repeat;
     width: 300px;
-    height: 300px;
-    margin: 10px;
+    height: 310px;
+    margin-top: 2px;
+    padding: 10px 0px;
+
 }
 .ideas__items-row-item-wide-culture{
-    background: url(../src/images/ideas-culture.png);
+    background: url(../src/images/ideas-culture.png) center no-repeat;
     width: 620px;
-    height: 300px;
-    margin: 10px;
+    height: 310px;
+    margin-top: 2px;
+    padding: 10px 0px;
+
 }
 .ideas__items-row-item-wide-relaxation{
-    background: url(../src/images/ideas-relaxation.png);
+    background: url(../src/images/ideas-relaxation.png) center no-repeat;
     width: 620px;
-    height: 300px;
-    margin: 10px;
+    height: 310px;
+    margin-top: 2px;
+    padding: 10px 0px;
+
 }
 .ideas__items-row-item-text{
     height: 100%;
@@ -372,7 +393,7 @@ body{
     background-size: cover;
     align-items: center;
     flex-direction: column;
-    margin-top: 70px;
+    margin-top: 80px;
 }
 .search-partners__title{
     font-family: Montserrat bold;
@@ -381,18 +402,18 @@ body{
 .search-partners__subtitle{
     font-family: Roboto;
     font-size: 18px;
-    margin: 20px;
+    margin: 18px;
 }
 .search-partners__form{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    width: 410px;
 }
 .search-partners__form input{
-   padding: 10px 70px 10px 10px;
+   padding: 10px 72px 10px 10px;
    font-family: Roboto;
    font-size: 14px;
-   margin-right: 10px;
 }
 .search-partners__form button{
     font-family: Montserrat bold;
@@ -401,23 +422,22 @@ body{
     border: none;
     color: white;
     border-radius: 50px;
-    padding: 10px 20px;
+    padding: 10px 28px  10px 22px;
 }
-
 
 .footer{
     display: flex;
     background-color: white;
     background-size: cover;
     flex-direction: row;
-    justify-content: space-around;
-    margin-top: 100px;
+    justify-content: space-evenly;
+    margin-top: 99px;
     border-top: 4px solid #ff4e50;
-    padding: 40px 0px;
+    padding: 37px 0px;
 }
 .footer-container{
     display: flex;
-    width: 560px;
+    width: 570px;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -426,16 +446,19 @@ body{
     color: #ff4e50;
     font-size: 16px;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 .footer__list-name{
     font-family: Montserrat bold;
     font-size: 14px;
     margin-bottom: 20px;
+    padding-right: 45px;
 }
 .footer__list-item{
     font-family: Roboto;
     font-size: 14px;
     color: #cccccc;
+    margin: 5px;
 }
 .footer__logo-designed-by{
     font-family: Montserrat bold;
@@ -445,3 +468,28 @@ body{
     margin-bottom: 10px;
     text-transform: uppercase;
 }
+
+/* @media screen and (max-width: 768px) {
+    .promo__header{
+    align-items: center;
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0px;
+    }
+    .promo__header-name{
+        padding-top: 140px;
+    }
+    .promo__title{
+        font-size: 30px;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 1440) {
+    .promo__header{
+        
+        margin: 0;
+    }
+} */
