@@ -37,8 +37,7 @@ body{
     width: 940px;
     justify-content: space-between;
     flex-direction: row-reverse; 
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; 
 }
 .promo__header-name{
     font-family: 'Montserrat bold';
@@ -130,7 +129,7 @@ body{
     flex-direction: row;
 }
 .how-it-works__card-step-1{
-    background: url(../src/images/image-step-1.png);
+    background: url(../src/images/image-step-1.png) center;
     display: flex;
     flex-direction: column;
     justify-content:flex-end;
@@ -139,10 +138,11 @@ body{
     width: 280px;
     background-size: cover;
     padding-left: 20px;
+    border-radius: 5px;
 }
 .how-it-works__card-step-2{
 
-    background: url(../src/images/image-step-2.png) ;
+    background: url(../src/images/image-step-2.png) center;
     display: flex;
     flex-direction: column;
     justify-content:flex-end;
@@ -151,9 +151,10 @@ body{
     width: 280px;
     background-size: cover;
     padding-left: 20px;
+    border-radius: 5px;
 }
 .how-it-works__card-step-3{
-    background: url(../src/images/image-step-3.png) ;
+    background: url(../src/images/image-step-3.png) center;
     display: flex;
     flex-direction: column;
     justify-content:flex-end;
@@ -162,6 +163,7 @@ body{
     width: 280px;
     background-size: cover;
     padding-left: 20px;
+    border-radius: 5px;
 }
 .how-it-works__card-step-number{
     padding-left: 2px;
@@ -184,6 +186,9 @@ body{
     margin: 14px 0px 8px 0px;
 }
 .how-it-works__card-step-subtitle{
+    display: flex;
+    width: 265px;
+    height: 50px;
     font-size: 14px;
     margin-top: 5px;
     padding-bottom: 15px;
@@ -469,7 +474,98 @@ body{
     text-transform: uppercase;
 }
 
-/* @media screen and (max-width: 768px) {
+@media (max-width: 1440px) {
+    .promo__header-container{
+        width: 670px;
+    }
+    .promo__title{
+        padding: 0px 5px 0px 0px;
+    }
+    .promo__subtitle{
+        margin: 28px;
+    }
+    .how-it-works__steps{
+        width: 765px;
+        justify-content: space-around;
+    }
+    .how-it-works__card-step-1{
+        width: 235px;
+        margin: 0px 2px;
+        padding: 0px;
+        
+    }
+    .how-it-works__card-step-2{
+        width: 235px;
+        padding-left: 0px;
+
+    }
+    .how-it-works__card-step-3{
+        width: 235px;
+        padding-left: 0px;
+    }
+    .how-it-works__card-step-number{
+        margin: 25px  0px 0px 20px;
+    }
+    .how-it-works__card-step-title{
+        padding-left: 18px;
+    }
+    .how-it-works__card-step-subtitle{
+        font-size: 14px;
+        margin-top: 5px;
+        padding-bottom: 15px;
+        width: 205px;
+        height: 65px;
+        padding-left: 18px;
+    }
+    .partners__items{
+        width: 768px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .partners__items-row{
+        margin-bottom: 12px;
+    }
+    .ideas__items-row{
+        width: 768px;
+        justify-content: space-evenly;
+    }
+    .ideas__items-row-item-square-sport{
+        background: url(../src/images/ideas-sport.png) left no-repeat;
+        width: 235px;
+    }
+    .ideas__items-row-item-square-wellnes{
+        background: url(../src/images/ideas-wellnes.png) left no-repeat;
+        width: 235px;
+    }
+    .ideas__items-row-item-square-extreme{
+        width: 235px;
+        background: url(../src/images/ideas-extreme.png) left no-repeat;
+    }
+    .ideas__items-row-item-square-games{
+        width: 235px;
+        background: url(../src/images/ideas-games.png) left no-repeat;
+    }
+    .ideas__items-row-item-square-travelling{
+        width: 235px;
+        background: url(../src/images/ideas-travelling.png) left no-repeat;
+    }
+    .ideas__items-row-item-wide-culture{
+        width: 490px;
+        background: url(../src/images/ideas-culture.png) left no-repeat;
+    }
+    .ideas__items-row-item-wide-relaxation{
+        width: 490px;
+    }
+    .ideas__items-row-item-text{
+        text-align: center;
+        padding: 0 9px;
+    }
+    .footer__list-partners{
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
     .promo__header{
     align-items: center;
     padding-top: 130px;
@@ -478,6 +574,9 @@ body{
     flex-wrap: nowrap;
     justify-content: center;
     margin: 0px;
+    }
+    .promo__header-container{
+        width: 320px;
     }
     .promo__header-name{
         padding-top: 140px;
@@ -492,4 +591,4 @@ body{
         
         margin: 0;
     }
-} */
+}
