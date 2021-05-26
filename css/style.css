@@ -10,17 +10,23 @@
     font-family: 'Roboto';
     src: url(../src/fonts/Roboto.ttf);
 }
-
 body{
+    display: flex;
+    justify-content: center;
     font-family: Roboto;
     margin: 0px;
     padding: 0px;
+    flex-direction: column;
+}
+@viewport{
+    width: 100%;
+    zoom: 1;
 }
 .promo{
     display: flex;
     flex-wrap: wrap;
     height: 700px;
-    background: url(../src/images/promo-image.png) center;
+    background: url(../src/images/promo-image.png) center no-repeat;
     background-color: black;
     background-size: cover;
     justify-content: center;
@@ -480,9 +486,19 @@ body{
     text-transform: uppercase;
 }
 
-@media only screen and (max-width: 768px), only screen and (max-device-width: 768px){
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px){
+    body{
+        width: 320px ;
+        zoom: 3;
+    }
+    @viewport{
+        width: 320px;
+        /* zoom: 150%; */
+    }
     .promo{
         height: 540px;
+        width: 320px;
+        justify-content: center;
     }
     .promo__header{
         justify-content: center;
@@ -495,15 +511,18 @@ body{
         justify-content: center;
         flex-direction: column; 
         margin-top: 190px;
+        max-width: 320px;
     }
     .promo__header-name{
         text-align: center;
         font-size: 20px;
         letter-spacing: 1px;
         padding-top: 90px;
+        max-width: 320px;
     }
     .promo__buttons{
         justify-content: center;
+        max-width: 320px;
     }
 
     .promo__content{
@@ -536,6 +555,7 @@ body{
         margin: 0px;
     }
     .how-it-works__steps{
+        max-width: 320px;
         display:flex;
         width: 320px;
         justify-content: space-between;
@@ -618,6 +638,7 @@ body{
         width: 320px;
         flex-direction: column;
         justify-content: space-between;
+        max-width: 320px;
     }
     .partners__items-row-1{
         align-items: center;
@@ -626,6 +647,7 @@ body{
         justify-content: space-between;
         height: 725px;
         margin-bottom: 10px;
+        max-width: 320px;
     }
     .partners__items-row-2{
         position: absolute;
@@ -657,6 +679,7 @@ body{
         width: 320px;
         justify-content: center;
         align-items: center;
+        max-width: 320px;
     }
     .ideas__items-row-item-square-sport{
         background: url(../src/images/ideas-sport.png) center -40px no-repeat;
@@ -692,7 +715,7 @@ body{
     }
     .ideas__items-row-item-square-travelling{
         background: url(../src/images/ideas-travelling.png) center no-repeat;
-        width: 300px;
+        max-width: 235px;
         height: 120px;
         margin-top: -6px;
         padding: 0px;
@@ -700,7 +723,7 @@ body{
     }
     .ideas__items-row-item-wide-culture{
         background: url(../src/images/ideas-culture.png) center no-repeat;
-        width: 300px;
+        max-width: 235px;
         height: 120px;
         margin-top: -6px;
         padding: 0px;
@@ -708,7 +731,7 @@ body{
     }
     .ideas__items-row-item-wide-relaxation{
         background: url(../src/images/ideas-relaxation.png) center no-repeat;
-        width: 300px;
+        max-width: 235px;
         height: 120px;
         margin-top: -6px;
         padding: 0px;
@@ -791,6 +814,10 @@ body{
     }
 }
 @media screen and (max-width: 1440px) {
+    @viewport{
+        justify-content: center;
+        width: device-width;
+    }
     .promo__header-container{
         width: 670px;
     }
