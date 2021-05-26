@@ -480,101 +480,7 @@ body{
     text-transform: uppercase;
 }
 
-@media (max-width: 1440px) {
-    .promo__header-container{
-        width: 670px;
-    }
-    .promo__title{
-        padding: 0px 5px 0px 0px;
-    }
-    .promo__subtitle{
-        margin: 28px;
-    }
-    .how-it-works__steps{
-        width: 765px;
-        justify-content: space-around;
-    }
-    .how-it-works__card-step-1{
-        width: 235px;
-        margin: 0px 2px;
-        padding: 0px;
-        
-    }
-    .how-it-works__card-step-2{
-        width: 235px;
-        padding-left: 0px;
-
-    }
-    .how-it-works__card-step-3{
-        width: 235px;
-        padding-left: 0px;
-    }
-    .how-it-works__card-step-number{
-        margin: 25px  0px 0px 20px;
-    }
-    .how-it-works__card-step-title{
-        padding-left: 18px;
-    }
-    .how-it-works__card-step-subtitle{
-        font-size: 14px;
-        margin-top: 5px;
-        padding-bottom: 15px;
-        width: 205px;
-        height: 65px;
-        padding-left: 18px;
-    }
-    .partners__items{
-        width: 768px;
-        flex-direction: column;
-        align-items: center;
-    }
-    .partners__items-row-1{
-        margin-bottom: 12px;
-    }
-    .partners__items-row-2{
-        margin-bottom: 12px;
-    }
-    .ideas__items-row{
-        width: 768px;
-        justify-content: space-evenly;
-    }
-    .ideas__items-row-item-square-sport{
-        background: url(../src/images/ideas-sport.png) left no-repeat;
-        width: 235px;
-    }
-    .ideas__items-row-item-square-wellnes{
-        background: url(../src/images/ideas-wellnes.png) left no-repeat;
-        width: 235px;
-    }
-    .ideas__items-row-item-square-extreme{
-        width: 235px;
-        background: url(../src/images/ideas-extreme.png) left no-repeat;
-    }
-    .ideas__items-row-item-square-games{
-        width: 235px;
-        background: url(../src/images/ideas-games.png) left no-repeat;
-    }
-    .ideas__items-row-item-square-travelling{
-        width: 235px;
-        background: url(../src/images/ideas-travelling.png) left no-repeat;
-    }
-    .ideas__items-row-item-wide-culture{
-        width: 490px;
-        background: url(../src/images/ideas-culture.png) left no-repeat;
-    }
-    .ideas__items-row-item-wide-relaxation{
-        width: 490px;
-    }
-    .ideas__items-row-item-text{
-        text-align: center;
-        padding: 0 9px;
-    }
-    .footer__list-partners{
-        padding-right: 20px;
-    }
-}
-
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px), only screen and (max-device-width: 768px){
     .promo{
         height: 540px;
     }
@@ -882,5 +788,98 @@ body{
     .footer__logo-designed-by{
         text-align: center;
         margin-top: -5px;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .promo__header-container{
+        width: 670px;
+    }
+    .promo__title{
+        padding: 0px 5px 0px 0px;
+    }
+    .promo__subtitle{
+        margin: 28px;
+    }
+    .how-it-works__steps{
+        width: 765px;
+        justify-content: space-around;
+    }
+    .how-it-works__card-step-1{
+        width: 235px;
+        margin: 0px 2px;
+        padding: 0px;
+        
+    }
+    .how-it-works__card-step-2{
+        width: 235px;
+        padding-left: 0px;
+
+    }
+    .how-it-works__card-step-3{
+        width: 235px;
+        padding-left: 0px;
+    }
+    .how-it-works__card-step-number{
+        margin: 25px  0px 0px 20px;
+    }
+    .how-it-works__card-step-title{
+        padding-left: 18px;
+    }
+    .how-it-works__card-step-subtitle{
+        font-size: 14px;
+        margin-top: 5px;
+        padding-bottom: 15px;
+        width: 205px;
+        height: 65px;
+        padding-left: 18px;
+    }
+    .partners__items{
+        width: 768px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .partners__items-row-1{
+        margin-bottom: 12px;
+    }
+    .partners__items-row-2{
+        margin-bottom: 12px;
+    }
+    .ideas__items-row{
+        width: 768px;
+        justify-content: space-evenly;
+    }
+    .ideas__items-row-item-square-sport{
+        background: url(../src/images/ideas-sport.png) left no-repeat;
+        width: 235px;
+    }
+    .ideas__items-row-item-square-wellnes{
+        background: url(../src/images/ideas-wellnes.png) left no-repeat;
+        width: 235px;
+    }
+    .ideas__items-row-item-square-extreme{
+        width: 235px;
+        background: url(../src/images/ideas-extreme.png) left no-repeat;
+    }
+    .ideas__items-row-item-square-games{
+        width: 235px;
+        background: url(../src/images/ideas-games.png) left no-repeat;
+    }
+    .ideas__items-row-item-square-travelling{
+        width: 235px;
+        background: url(../src/images/ideas-travelling.png) left no-repeat;
+    }
+    .ideas__items-row-item-wide-culture{
+        width: 490px;
+        background: url(../src/images/ideas-culture.png) left no-repeat;
+    }
+    .ideas__items-row-item-wide-relaxation{
+        width: 490px;
+    }
+    .ideas__items-row-item-text{
+        text-align: center;
+        padding: 0 9px;
+    }
+    .footer__list-partners{
+        padding-right: 20px;
     }
 }
